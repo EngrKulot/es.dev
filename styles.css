@@ -1,0 +1,777 @@
+
+
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 90%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.logo h1 {
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.es-link {
+    color: #ffcc00;
+    transition: color 0.3s ease;
+}
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #ffcc00;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600; 
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;/* General Styles */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #121212;
+        color: #fff;
+    }
+    
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Ensure everything is vertically aligned */
+        padding: 15px 5%;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        width: 90%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+        height: 70px; /* Ensure uniform header height */
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start; /* Ensure it stays on the left */
+    }
+    
+    .logo h1 {
+        font-size: 4px;
+        font-weight: bold;
+        color: #ffcc00;
+        margin: 0;
+        line-height: 1; /* Ensures text is centered */
+        display: flex;
+        align-items: center;
+    }
+    
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #ffcc00;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+        align-items: center; /* Ensures links are aligned */
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 600;
+        transition: color 0.3s;
+        display: flex;
+        align-items: center; /* Ensures vertical alignment */
+    }
+    
+    nav ul li a:hover {
+        color: #ffcc00;
+    }
+    
+    /* Hero Section */
+    #hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+        padding: 20px;
+    }
+    
+    .hero-content h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #ffcc00;
+    }
+    
+    .hero-content p {
+        font-size: 50px;
+        color: #ccc;
+    }
+    
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Responsive Design */
+    @media screen and (max-width: 1024px) {
+        header {
+            padding: 15px 3%;
+            width: 94%;
+        }
+    
+        .hero-content h2 {
+            font-size: 30px;
+        }
+    
+        .hero-content p {
+            font-size: 16px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        nav ul {
+            display: none;
+        }
+    
+        header {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .hero-content h2 {
+            font-size: 24px;
+        }
+        .hero-content p {
+            font-size: 14px;
+        }
+    }
+    
+    background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.hero-content p {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 15px 3%;
+        width: 94%;
+    }
+
+    .hero-content h2 { 
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 24px;
+    }
+    .hero-content p {
+        font-size: 14px;
+    }
+}
+.cursor {
+    color: #ffcc00;
+    font-weight: bold;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+/*about...........................................................*/
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* About Section - Inspired by Level 10 GC */
+#about {
+    text-align: center;
+    background: #1c1c1c;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 5%;
+}
+
+/* Background text effect with floating animation */
+.about-background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.05);
+    white-space: nowrap;
+    z-index: 0;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    animation: floatText 5s infinite alternate ease-in-out;
+}
+
+@keyframes floatText {
+    from {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+    to {
+        transform: translate(-50%, -50%) translateY(10px);
+    }
+}
+
+/* About Content with smooth reveal */
+.about-container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards 0.5s;
+}
+
+.about-container h2 {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    background-clip: text;
+    -webkit-background-clip: text; /* Safari & Chrome */
+    -moz-background-clip: text; /* Firefox */
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* Webkit browsers */
+}
+.about-container h3 {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.about-container p, .about-container ul {
+    font-size: 25px;
+    color: #ccc;
+    line-height: 1.8;
+    position: relative;
+    z-index: 2;
+}
+
+/* Skills List with glowing border animation */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin: 5px 15px;
+    padding: 10px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-list li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: glowBorder 1.5s infinite alternate;
+}
+
+@keyframes glowBorder {
+    from {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .about-background-text {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-container h2 {
+        font-size: 28px;
+    }
+    .about-background-text {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-background-text {
+        font-size: 60px;
+    }
+}
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    transform: scale(1.05);
+}
+
+
+/*contact...........................................................*/
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    background: #1c1c1c;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 5%;
+}
+
+/* Background text effect with floating animation */
+.contact-background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.05);
+    white-space: nowrap;
+    z-index: 0;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    animation: floatText 5s infinite alternate ease-in-out;
+}
+
+@keyframes floatText {
+    from {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+    to {
+        transform: translate(-50%, -50%) translateY(10px);
+    }
+}
+
+/* Contact Content */
+.contact-container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards 0.5s;
+}
+.contact-container p {
+    font-size: 50px
+}
+.contact-container h2 {
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    background-clip: text;
+    -webkit-background-clip: text; /* Safari & Chrome */
+    -moz-background-clip: text; /* Firefox */
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* Webkit browsers */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Links */
+.contact-container h4 {
+    font-size: 24px;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.contact-container h4:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .contact-background-text {
+        font-size: 100px;
+    }
+
+    .contact-container h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container h2 {
+        font-size: 28px;
+    }
+
+    .contact-background-text {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-background-text {
+        font-size: 60px;
+    }
+
+    .contact-container h2 {
+        font-size: 24px;
+    }
+
+    .contact-container h4 {
+        font-size: 18px;
+    }
+}
+
+/*projects*.............................................../
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Contact Section */
+#project {
+    text-align: center;
+    background: #1c1c1c;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 5%;
+}
+
+/* Background text effect with floating animation */
+.project-background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.05);
+    white-space: nowrap;
+    z-index: 0;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    animation: floatText 5s infinite alternate ease-in-out;
+}
+#project ul {
+    list-style: none;
+    padding: 0;
+}
+
+#project ul p{
+    font-size: 60px;
+    background: rgba(0, 255, 204, 0.2);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#project ul a {
+    display: inline-block;
+    font-size: 18px; 
+    font-weight: bold;
+    color: white; 
+    background: #ff6b6b; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: 0.3s ease-in-out; 
+}
+
+#project ul a:hover {
+    background: #ff4444; /* Medyo darker red sa hover */
+    transform: scale(1.1); /* Palakihin kapag hinover */
+}
+
+@keyframes floatText {
+    from {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+    to {
+        transform: translate(-50%, -50%) translateY(10px);
+    }
+}
+
+/* Contact Content */
+.project-container {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards 0.5s;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+/* Responsive Design - Ayusin */
+@media screen and (max-width: 1024px) {
+    .project-background-text { /* Dapat "project" hindi "contact" */
+        font-size: 100px;
+    }
+
+    .project-container h2 { /* Dapat "project" hindi "contact" */
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project-container h2 {
+        font-size: 28px;
+    }
+
+    .project-background-text { 
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-background-text { 
+        font-size: 60px;
+    }
+
+    .project-container h2 {
+        font-size: 24px;
+    }
+
+    .project-container h4 {
+        font-size: 18px;
+    }
+}
+
+/* Z-Index Fix */
+.project-background-text {
+    z-index: -1; /* Siguraduhin na nasa likod lang siya */
+}
+
+.project-container {
+    z-index: 2; /* Mas mataas para lumabas ang content */
+}
+.project-background-text {
+    z-index: 1 !important; /* Iangat ang background text */
+}
