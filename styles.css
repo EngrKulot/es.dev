@@ -664,7 +664,9 @@ body {
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     animation: floatText 5s infinite alternate ease-in-out;
+    pointer-events: none;
 }
+
 #project ul {
     list-style: none;
     padding: 0;
@@ -678,7 +680,7 @@ body {
     border-radius: 5px;
 }
 
-#project ul a {
+#project ul a{
     display: inline-block;
     font-size: 18px; 
     font-weight: bold;
@@ -689,6 +691,8 @@ body {
     text-decoration: none; 
     transition: 0.3s ease-in-out; 
 }
+
+
 
 #project ul a:hover {
     background: #ff4444; /* Medyo darker red sa hover */

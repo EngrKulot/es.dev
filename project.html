@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="dark-theme">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./my_pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h1><a href="index.html" class="es-link">ES</a></h1>
+            </div>
+            <ul>
+                <li><a href="./about.html">About Me</a></li>
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data)
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+    <section id="project">
+        <!-- Background Text Effect -->
+        <div class="project-background-text">PROJECTS</div>
+    
+        
+    <section id="project">
+        <ul>
+        <p>Eighty Eight Hotel – Modern hotel landing page</p><a href="https://engrkulot.github.io/88Hotel.com/" target="_blank">View Project</a>
+        <p>RDJ Group – Business website</p><a href="https://engrkulot.github.io/rdjgroup-website/" target="_blank">View Project</a>
+        <p>Valentine's Website – Interactive love-themed page</p><a href="https://engrkulot.github.io/FAM/" target="_blank">View Project</a> 
+        </ul>
+    </section>
+
+    </section>
+<body>
+    
+</body>
+</html>

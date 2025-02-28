@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="dark-theme">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./my_pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h1><a href="index.html" class="es-link">ES</a></h1>
+            </div>
+            <ul>
+                <li><a href="./about.html">About Me</a></li>
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data)
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+    <section id="contact">
+        <!-- Background Text Effect -->
+        <div class="contact-background-text">CONTACT ME</div>
+    
+        <div class="contact-container">
+            <h2>Let's Connect!</h2>
+            <p>If you're looking for a developer who loves clean code and modern design, let's collaborate! Feel free to check out my projects or contact me.</p>
+            <h4>emmansadiangabay1224@gmail.com </h4>
+            <h4>https://www.facebook.com/emman.sadiangabay</h4>
+            <h4>https://www.linkedin.com/in/emman-sadiang-abay-768074274/</h4>
+            <h4>+639632649854</h4>
+            
+        </div>
+    </section>
+<body>
+    
+</body>
+</html>
