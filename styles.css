@@ -92,23 +92,50 @@ nav ul li a:hover {
 
 /* Mobile Navigation */
 @media screen and (max-width: 768px) {
-    nav ul {
-        display: none; /* Hide default menu */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 5%;
-        background: rgba(0, 0, 0, 0.9);
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    nav ul.active {
-        display: flex; /* Show menu when toggled */
-    }
-
     .menu-toggle {
-        display: block; /* Show menu button */
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 28px;
+        color: #ffcc00;
+        cursor: pointer;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Itago muna sa kanan */
+        width: 60%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 80px;
+        transition: right 0.3s ease-in-out;
+    }
+
+    nav.active {
+        right: 0; /* Lalabas pag active */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+        display: block;
+        padding: 10px 20px;
     }
 }
 
