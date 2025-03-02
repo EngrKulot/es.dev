@@ -1,5 +1,5 @@
-
 document.addEventListener("DOMContentLoaded", function () {
+    // Typing Effect
     const textArray = [
         "I design & code stunning web experiences.",
         "Creating clean, modern, and responsive websites.",
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
     let index = 0;
     let charIndex = 0;
-    let typingElement = document.getElementById("typing");
+    const typingElement = document.getElementById("typing");
 
     function typeEffect() {
         if (charIndex < textArray[index].length) {
@@ -29,14 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(typeEffect, 500);
         }
     }
+
+    typeEffect();
+
+    // Mobile Menu Toggle
     const menuToggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector("nav");
-    
+
     menuToggle.addEventListener("click", () => {
         nav.classList.toggle("active");
     });
-    
-    typeEffect();
 });
-
-
