@@ -279,7 +279,9 @@ footer {
 
 @media screen and (max-width: 768px) {
     nav ul {
-        display: none;
+        display: flex; /* Para hindi mawala ang menu */
+        flex-direction: column; /* Para vertical sa mobile */
+        align-items: center;
     }
 
     header {
@@ -307,7 +309,6 @@ footer {
         opacity: 0;
     }
 }
-
 
 
 /*about...........................................................*/
