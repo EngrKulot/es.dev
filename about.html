@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-   
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </head>
 <body class="dark-theme">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Ilipat sa body -->
+
     <header>
         <nav>
             <div class="logo">
@@ -22,42 +22,39 @@
             </ul>
         </nav>
     </header>
-    
+
     <div id="header-container"></div>
+
     <script>
         fetch('header.html')
             .then(response => response.text())
             .then(data => document.getElementById('header-container').innerHTML = data)
             .catch(error => console.error('Error loading header:', error));
     </script>
- 
-<section id="about">
-    <!-- Background Text Effect -->
-    <div class="about-background-text">ABOUT ME</div>
 
-    <div class="about-container">
-        <h2>Hey <strong>there.</strong></h2>
-        <p>Im Emman, Tech Support Engineer Transitioning to Developer/Web Developer | Passionate About Building Innovative Digital Solutions
-            with a strong eye for design and user experience. I specialize in creating modern, responsive, 
-            and visually stunning websites using <strong>HTML, CSS, and JavaScript</strong>.</p>
+    <section id="about">
+        <div class="about-background-text">ABOUT ME</div>
 
-        <h3>My Skills</h3>
-        <ul class="skills-list">
-            <li>HTML5</li>
-            <li>CSS3 (SASS, Tailwind)</li>
-            <li>JavaScript (ES6+)</li>
-            <li>Responsive Web Design</li>
-            <li>UI/UX Design</li>
-        </ul>
+        <div class="about-container">
+            <h2>Hey <strong>there.</strong></h2>
+            <p>Im Emman, Tech Support Engineer Transitioning to Developer/Web Developer | Passionate About Building Innovative Digital Solutions
+                with a strong eye for design and user experience. I specialize in creating modern, responsive, 
+                and visually stunning websites using <strong>HTML, CSS, and JavaScript</strong>.</p>
 
-        <h3>My Passion</h3>
-        <p>Web development is more than just coding for me—it's about crafting meaningful digital experiences. I'm dedicated to continuous learning and improving my craft to build high-quality, interactive, and accessible websites.</p>
+            <h3>My Skills</h3>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3 (SASS, Tailwind)</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Responsive Web Design</li>
+                <li>UI/UX Design</li>
+            </ul>
 
-    </div>
-</section>
-    <script src="script.js" defer></script>
+            <h3>My Passion</h3>
+            <p>Web development is more than just coding for me—it's about crafting meaningful digital experiences. I'm dedicated to continuous learning and improving my craft to build high-quality, interactive, and accessible websites.</p>
+        </div>
+    </section>
 
+    <script src="script.js" defer></script> <!-- Load script properly -->
 </body>
 </html>
-
-
